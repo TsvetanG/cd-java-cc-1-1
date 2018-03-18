@@ -47,7 +47,7 @@ public class TransferChaincode extends ChaincodeBase {
       return transfer(stub, arguments.stream().toArray(String[]::new));
 
     default:
-      break;
+      break; 
     }
     return newErrorResponse(Json.createObjectBuilder().add("Error", "Unknown operation").build().toString());
   }
